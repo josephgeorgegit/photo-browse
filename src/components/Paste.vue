@@ -1,6 +1,6 @@
 <template>
   <div class="paste">
-      <p style="display: flex; justify-content: space-between;">Paste in links<button @click="returnLinks">Done</button></p>
+      <p style="display: flex; justify-content: space-between;">Paste in links comma seperated<button @click="returnLinks">Done</button></p>
       <textarea v-model="links" name="" id="" cols="30" rows="10"></textarea>
   </div>
 </template>

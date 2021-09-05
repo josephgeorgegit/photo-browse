@@ -60,24 +60,8 @@ img{
 </style>
 
 <script>
-// import lounge from '@/assets/lounge.jpg'
-// import loungeview from '@/assets/loungeview.jpg'
-// import living from '@/assets/living.jpg'
-// import outdoor from '@/assets/outdoor.jpg'
-
-// this is an aplication that lets you post anonymously a picture and you write the story of that picture.
-// everyone has a story tell, a photo says a million words. in a time where all we want is connection,
-// lets get people to tell their stories and lets get to know people anonymously. It feels like sometimes
-// we just want to tell a story but have no one to tell it to.
-
-// Most of all, this application is meant to be telling the story with the image.
-// what i wrote there is the story of why it looks like this. im giving the design a reason to exist
-
-
-// on load check how many images there are(n) and make the view width that 100 * n
-// algorithm to scale the image to optimal view size, based on height or width
-
 import Paste from '@/components/Paste.vue'
+
 export default {
   name: 'App',
   components: {
@@ -92,9 +76,6 @@ export default {
       open_paste: false
     }
   },
-  // taking the array of images and returning 2 at a time. 
-  // on click swip the first two left/
-  // one this animation finishes load [1] into [0] and [2] from the entire array into [1]
   computed: {
     two_images(){
       return [this.images[this.queue[0]], this.images[this.queue[1]], this.images[this.queue[2]]]
@@ -108,7 +89,6 @@ export default {
   },
   methods: {
     paste_funk(){
-      console.log('chehoo')
       this.open_paste = !this.open_paste
     },
     returnLinks(e){
